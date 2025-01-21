@@ -14,7 +14,7 @@ const cartItems = createSlice({
           id: action.payload.id,
           name: action.payload.name,
           price: action.payload.price,
-          quantity: 1,
+          quantity: action.payload?.quantity || 1,
         };
       }
     },
